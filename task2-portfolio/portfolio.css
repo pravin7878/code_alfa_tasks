@@ -1,0 +1,849 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/*<------------Header Section Styling Start-----------> */
+
+#naivbar {
+    z-index: 999;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    position: fixed;
+    top: 0;
+}
+
+#naivbar h1 {
+    color: red;
+    font-size: 40px;
+    margin: 10px;
+    text-shadow: 2px 2px 8px #0b0b0b;
+}
+
+#naivbar div {
+    width: 48%;
+    justify-content: center;
+}
+
+#naivbar>:first-child {
+    text-align: center;
+}
+
+
+#naivbar div a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: 700;
+    margin: 10px;
+    font-size: 17px;
+    align-items: center;
+}
+
+#naivbar div a:hover {
+    color: red;
+    font-size: 18px;
+    margin: 8px;
+
+}
+
+.mobile-navbar-btn {
+    display: none;
+}
+
+#open-menu {
+    background-color: black;
+    padding: 0px;
+    margin: 0px;
+    border: none;
+}
+
+.open-menu-btn {
+    width: 60%;
+}
+
+.close-menu-btn {
+    width: 80%;
+}
+
+
+
+.mobile-menu-div {
+    background-color: #0b0b0b;
+    position: absolute;
+    top: 48px;
+
+    width: 100vw;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    transition: all .5s;
+}
+
+.mobile-menu-div a {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+/*<------------Responsive code for Header Section-----------> */
+
+@media only screen and (max-width:1060px) and (min-width:750px) {
+    #naivbar div a:hover {
+        font-size: 13px;
+        margin: 6px;
+    }
+
+    #naivbar div a {
+        font-weight: 400;
+        margin: 8px;
+        font-size: 12px;
+    }
+
+    #naivbar h1 {
+        font-size: 35px;
+        margin: 10px;
+    }
+}
+
+@media only screen and (max-width:749px) and (min-width:580px) {
+    #naivbar div a:hover {
+        font-size: 8px;
+        margin: 8px;
+    }
+
+    #naivbar div a {
+        font-weight: 400;
+        margin: 8px;
+        font-size: 8px;
+    }
+
+    #naivbar h1 {
+        font-size: 20px;
+        margin: 7px;
+    }
+
+
+}
+
+@media only screen and (max-width:600px) and (min-width:200px) {
+
+    .showhide {
+        display: none;
+    }
+
+    .dekstop-navbar-btn {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        text-align: center;
+        top: 40px;
+        right: 0px;
+        background-color: #0b0b0b;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .mobile-navbar-btn {
+        display: block;
+        z-index: 999;
+        text-align: end;
+        padding-right: 40px;
+        font-size: 17px;
+    }
+
+    #naivbar h1 {
+        font-size: 20px;
+        margin: 10px;
+    }
+}
+
+/*<------------Home Page Section Styling Start-----------> */
+
+#Home {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 23px;
+    padding-top: 30px;
+    background-image: url(./Image/backgraund-3.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding-bottom: 160px;
+    height: auto;
+    background-size: max(1200px, 100vw);
+    transition: all .5s;
+}
+
+#Home>div {
+    width: 70%;
+    color: white;
+    text-align: center;
+    align-items: center;
+    padding-top: 100px;
+    font-size: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.element {
+    color: red;
+    border-color: black;
+}
+
+#Home> :first-child {
+    width: 30%;
+}
+
+#Home>div h1 {
+    color: red;
+    font-size: 7rem;
+}
+
+#Home>div h1,
+h4 {
+    margin: 13px;
+    text-shadow: 2px 2px 8px #0b0b0b;
+}
+
+.moving-text {
+    width: 80%;
+    text-align: left;
+    margin-left: 88px
+}
+
+#Home div a {
+    font-size: 24px;
+    font-weight: bold;
+    background-color: red;
+    text-decoration: none;
+    color: white;
+    padding: 7px 18px;
+    border-radius: 8px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-color: 2px solid white;
+    margin-bottom: 30px;
+}
+
+#Home div a:hover {
+    background-color: rgba(255, 0, 0, 0.495);
+}
+
+/*<------------Responsive code for Home Page Section-----------> */
+
+@media screen and (max-width:950px) and (min-width:720px) {
+    #Home div h1 {
+        font-size: 5rem;
+    }
+
+    #Home div h4 {
+        font-size: 3rem;
+    }
+
+    #home div a {
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+    }
+
+}
+
+@media screen and (max-width:720px) and (min-width:320px) {
+
+    #Home {
+        height: auto;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: max(1200px, 100vw);
+
+    }
+
+    #Home div h1 {
+        font-size: 3rem;
+    }
+
+    #Home div h4 {
+        font-size: 1rem;
+    }
+
+    #Home div button {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width:200) {
+    #Home div h1 {
+        font-size: 2rem;
+    }
+
+    #Home div h4 {
+        font-size: 0.6rem;
+    }
+}
+
+/*<------------About Page Section Styling Start-----------> */
+
+#About {
+    padding-top: 50px;
+}
+
+#About h1 {
+    text-align: center;
+    /* justify-content: center; */
+    font-size: 40px;
+    border-bottom: solid 6px red;
+    width: 20%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#About>div {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+
+}
+
+#About>div>div {
+    width: 30%;
+    padding: 30px;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    font-style: italic;
+}
+
+
+#About>div>:first-child>div {
+    border: solid 4px rgb(0, 0, 0);
+    width: 50%;
+    border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#About>div>:first-child>div>img {
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#About>div>:first-child {
+    justify-content: center;
+    align-items: center;
+}
+
+#About>div>:last-child {
+    justify-content: center;
+    gap: 8px;
+}
+
+/*<------------Responsive code for About Page Section------------> */
+
+@media screen and (max-width:800px) and (min-width:600px) {
+    #About h1 {
+        font-size: 30px;
+        width: 26%;
+    }
+
+    #About>div>:first-child>div {
+        width: 80%;
+    }
+
+    #About>div>div {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:600px) and (min-width:200px) {
+    #About h1 {
+        font-size: 30px;
+        width: 40%;
+    }
+
+    #About>div>:first-child>div {
+        width: 80%;
+    }
+
+    #About>div>div {
+        width: 60%;
+        font-size: 12px;
+        padding: 0px;
+    }
+
+    #About>div {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+}
+
+
+/*<------------Skills Section Styling start------------> */
+
+
+
+#Skills>.skillcontaint {
+
+    height: auto;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 0px;
+}
+
+.bgblack {
+    background-color: rgba(0, 0, 0, 0.93);
+}
+
+#Skills .skillcontaint h1 {
+    text-align: center;
+    /* justify-content: center; */
+    font-size: 40px;
+    border-bottom: solid 6px red;
+    width: 20%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 70px;
+}
+
+#Skills>.skillcontaint>div {
+    width: 70%;
+    margin: auto;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    margin-bottom: 90px;
+    padding-bottom: 20px;
+
+}
+
+#Skills .skillcontaint>div>div {
+    /* width: 100%; */
+    text-align: center;
+    padding: 50px;
+    background-color: rgba(58, 56, 56, 0.45);
+    margin-top: 30px;
+    border: solid 1px red;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#Skills .skillcontaint>div>div:hover {
+    border: solid 2px black;
+    background-color: rgba(255, 0, 0, 0.352);
+    transition: all 0.4s;
+}
+
+#Skills .skillcontaint>div>div>div {
+    width: 30%;
+    margin: auto;
+
+}
+
+#Skills .skillcontaint>div>div>div>img {
+    width: 100%;
+    height: 100%;
+}
+
+#Skills .skillcontaint>div>:last-child>div {
+    background-color: #FFFFFF;
+    border-radius: 15px;
+}
+
+#Skills .skillcontaint>div>:last-child>div>img {
+    width: 80%;
+    padding-left: 6px;
+}
+
+.bgwhite {
+    background-color: white;
+}
+
+#techstack>h1 {
+    color: #0b0b0b;
+    text-align: center;
+    font-size: 40px;
+    border-bottom: solid 6px red;
+    width: 20%;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#techstack>div {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+#techstack>div>div {
+    width: 23%;
+    justify-content: center;
+    text-align: center;
+    padding: 15px 36px;
+    background-color: #FFFFFF;
+}
+
+#techstack>div>div img {
+    width: 100%;
+}
+
+#techstack>div>div>h1 {
+    font-size: 2rem;
+}
+
+#techstack>div>div>:first-child {
+    /* padding: 20px; */
+}
+
+#techstack>div>div:hover {
+    background-color: #0b0b0b;
+    color: white;
+    border-radius: 12px;
+}
+
+/*<------------Responsive code for Skills Page Section------------> */
+@media screen and (max-width:1024px) and (min-width:720px) {
+    #Skills>.skillcontaint>div>div {
+        padding: 25px;
+        margin-top: 0px;
+    }
+
+}
+
+@media screen and (max-width:720px) and (min-width:420px) {
+    #Skills>.skillcontaint>div>div {
+        width: 70%;
+        padding: 20px;
+        margin-top: 0px;
+    }
+
+    #Skills>.skillcontaint>div {
+        width: 80%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    #Skills>#techstack>div {
+        width: 80%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    #Skills>#techstack>div>div {
+        width: 70%;
+        /* padding: 40px; */
+        margin-top: 0px;
+    }
+
+    #Skills>#techstack>h1 {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width:420px) and (min-width:200px) {
+    #Skills>.skillcontaint>div>div {
+        width: 50%;
+        margin: auto;
+        /* padding: 20px; */
+        margin-top: 0px;
+    }
+
+    #Skills>.skillcontaint>div {
+        width: 70%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+        justify-content: center;
+    }
+
+    #Skills>#techstack>div>div {
+        width: 40%;
+        margin: auto;
+        /* padding: 20px; */
+        margin-top: 0px;
+    }
+
+    #Skills>#techstack>div {
+        width: 70%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        /* gap: 20px; */
+        justify-content: center;
+    }
+
+    #Skills>#techstack>h1 {
+        font-size: 20px;
+    }
+}
+
+
+
+/*<------------Project Section Styling start------------> */
+
+#Project {
+    padding: 2rem 0px;
+    color: white;
+}
+
+
+#Project>h1 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 5px;
+    color: white;
+}
+
+#Project>h2 {
+    text-align: center;
+    font-size: 25px;
+}
+
+#Project>div {
+    display: flex;
+    gap: 15px;
+    width: 85%;
+    margin: auto;
+    justify-content: space-around;
+
+}
+
+#Project>div>div {
+    width: 35%;
+    margin: 50px 0px;
+    display: flex;
+    flex-direction: column;
+    border: solid 1px red;
+    padding: 20px;
+    background-color: rgba(58, 56, 56, 0.45);
+    border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+
+#Project>div>div>img {
+    width: 100%;
+}
+
+#Project>div>div>h1,
+p,
+h4 {
+    margin: 5px;
+}
+
+#Project>div>div>div {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    margin-top: 2rem;
+}
+
+#Project>div>div>div>a {
+    font-size: 1.5rem;
+    width: 35%;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    background-color: red;
+    padding: 5px 10px;
+    border-radius: 12px;
+    border: solid 2px black;
+}
+
+
+/*<------------Responsive Code for Project Section------------> */
+@media screen and (max-width:950px) and (min-width:720px) {
+    #Project>div>div>div>a {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width:720px) and (min-width:320px) {
+    #Project>div>div>div>a {
+        font-size: 1rem;
+    }
+
+    #Project>div {
+        display: flex;
+        width: 60%;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #Project>div>div {
+        width: 100%;
+        margin: 10px;
+    }
+
+}
+
+@media screen and (max-width:320px) {
+    #Project>div>div>div>a {
+        font-size: 1rem;
+    }
+
+    #Project>div {
+        display: flex;
+        width: 60%;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #Project>div>div {
+        width: 100%;
+        margin: 10px;
+    }
+
+}
+
+/*<------------github Page Section Styling Start-----------> */
+
+#github>h1 {
+    margin: 2rem 0rem;
+    text-align: center;
+    font-size: 3rem;
+}
+
+#github>div {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+
+}
+
+#github>div>div {
+    /* width: ;*/
+    /* border :solid 2px red ; */
+}
+
+#github>div>div>img {
+    width: 100%;
+}
+
+/*<------------Responsive code for github Page Section-----------> */
+
+@media screen and (max-width:720px) and (min-width:200px) {
+    #github>h1 {
+        font-size: 1.5rem;
+    }
+}
+
+/*<------------contect Page Section Styling Start-----------> */
+
+#Contact>h1 {
+    margin: 2rem 0rem;
+    text-align: center;
+    font-size: 3rem;
+}
+
+
+#Contact>div {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    color: #0b0b0b;
+    margin-bottom: 30px;
+}
+
+#Contact>div>div {
+    width: 20%;
+    font-size: 2rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#Contact>div>div>a {
+    text-decoration: none;
+    color: black;
+    padding: 6px;
+    text-align: center;
+
+}
+
+#Contact>div>div:hover {
+    background-color: rgba(255, 0, 0, 0.602);
+    border: solid 2px black;
+    border-radius: 12px;
+}
+
+
+#Contact>div>div>a>div>img {
+    width: 50%;
+}
+
+/*<------------responsive code for contaict Page Section-----------> */
+@media screen and (max-width:720px) {
+    #Contact>h1 {
+        margin: 2rem 0rem;
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    #Contact>div {
+        width: 70%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        color: #0b0b0b;
+        margin-bottom: 30px;
+    }
+
+    #Contact>div>div {
+        width: 100%;
+        font-size: 1.5rem;
+    }
+
+    #Contact>div>div>a>div>img {
+        width: 30%;
+    }
+}
+
+
+/*<------------footer Page Section Styling Start-----------> */
+
+footer {
+    background: black;
+    padding: 15px 23px;
+    color: #fff;
+    text-align: center;
+}

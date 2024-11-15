@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My-Portfolio</title>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./portfolio.css">
+<link rel="stylesheet" href="./Dynamic-text.css">
+
+<body>
+    <!------------Header Section Start----------->
+    <header id="naivbar">
+        <div>
+            <h1 class="name">Pravin Kumar</h1>
+        </div>
+
+        <div class="dekstop-navbar-btn">
+
+            <a href="#Home" onclick="hendelclick()">Home</a>
+            <a href="#About" onclick="hendelclick()">About</a>
+            <a href="#Skills" onclick="hendelclick()">Skills</a>
+            <a href="#Project" onclick="hendelclick()">Projects</a>
+            <a href="#Contact" onclick="hendelclick()">Contact</a>
+            <a id="resumebtn" href="./resume/PRAVIN-KUMAR-RESUME.pdf" download="PRAVIN-KUMAR-RESUME" target="_blank"
+                onclick="hendelclick()">Resume</a>
+
+        </div>
+        <div class="mobile-navbar-btn inactive">
+            <button id="open-menu" class="active"><img src="./Image/icons8-menu-50 (1).png" alt="open-menu"
+                    class="open-menu-btn"></button>
+        </div>
+    </header>
+
+
+    <!------------Home Section Start----------->
+    <section id="Home">
+        <div></div>
+        <div>
+            <h4>Hi 👋 my name is</h4>
+            <h1>Pravin Kumar</h1>
+            <div class="moving-text">
+                <h4>And I'm a <span class="element"></span></h4>
+            </div>
+
+            <a id="resumebtn" href="resume/PRAVIN-KUMAR-RESUME.pdf" download="PRAVIN-KUMAR-RESUME"
+                target="_blank">Resume</a>
+        </div>
+
+        <script>
+
+            var typed = new Typed('.element', {
+                strings: ["Frontend Developer.", "Web Designer.", "Problem Solver."],
+                typeSpeed: 100,
+                backSpeed: 100,
+                loop: true,
+            });
+        </script>
+    </section>
+
+    <!------------About Section Start----------->
+
+    <section id="About">
+        <h1>About me</h1>
+        <div>
+            <div>
+                <div>
+                    <img src="./Image/privin_profile_pic.jpg" alt="pravin kumar">
+                </div>
+            </div>
+            <div>
+                <h3>I'm Pravin Kumar.I'm <span>Frontend Devloper</span></h3>
+                <p>Dynamic Frontend Developer with expertise in
+                    JavaScript, React.js,Chakra ui, HTML, and CSS,
+                    capable of leveraging Generative AI to accelerate
+                    development processes. Exceptional problemsolving and collaboration skills, adept at creating
+                    responsive, high-performing web applications.
+                    Rapidly learns new technologies to enhance code
+                    scalability and user experience.
+                </p>
+            </div>
+        </div>
+
+    </section>
+
+    <!------------Skills Section Start----------->
+
+    <section id="Skills">
+        <div class="skillcontaint bgblack">
+            <h1>TechStack</h1>
+            <div>
+            </div>
+        </div>
+
+        <div class="bgwhite" id="techstack">
+            <h1>Tools I use</h1>
+            <div>
+                <div>
+                    <img src="./Image/vscode.png" alt="vs code">
+                    <h1>VsCode</h1>
+                </div>
+
+                <div>
+                    <img src="./Image/replit.png" alt="Replit">
+                    <h1>Replit</h1>
+                </div>
+
+                <div>
+                    <img src="./Image/github.png" alt="Github">
+                    <h1>Github</h1>
+                </div>
+
+                <div>
+                    <img src="./Image/git.png" alt="git">
+                    <h1>git</h1>
+                </div>
+                <div>
+                    <img src="./Image/postmen.png" alt="Postmen">
+                    <h1>Postmen</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!------------Projects Section Start----------->
+
+
+    <section id="Project" class="bgblack">
+        <h1>Project</h1>
+        <h2>Built By Me✌</h2>
+        <div class="project-div"></div>
+    </section>
+
+    <!------------github Section Start----------->
+
+    <section id="github">
+        <h1>My GitHub Contribution</h1>
+        <div>
+            <div>
+                <img src="https://github-readme-streak-stats.herokuapp.com?user=pravin7878" alt="GitHub Streak" />
+            </div>
+
+            <div>
+                <img src="https://github-readme-stats.vercel.app/api?username=pravin7878&show_icons=true&locale=en"
+                    alt="">
+            </div>
+            <div>
+                <img src="https://github-readme-stats.vercel.app/api/top-langs?username=gzbsingh&show_icons=true&locale=en&layout=compact"
+                    alt="">
+            </div>
+            <div>
+                <img src="./Image/contributions.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!------------Contact Section Start----------->
+
+    <section id="Contact">
+        <h1>Contact Details</h1>
+        <div>
+            <div>
+                <a href="https://www.linkedin.com/in/pravin-kumar-86b8a6246" target="_blank" rel="noopener noreferrer">
+                    <div><img src="./Image/linkedin.png" alt="linkedin"></div>Connect On Linkedin
+                </a>
+            </div>
+            <div>
+                <a href="https://github.com/pravin7878" target="_blank" rel="noopener noreferrer">
+                    <div><img src="./Image/github.png" alt="github"></div>Connect On GitHub
+                </a>
+            </div>
+            <div>
+
+                <a href="mailto:pravinmimrot648@gmail.com">
+                    <div><img src="./Image/Email.png" alt="email"></div>Connect On Email
+                </a>
+            </div>
+            <div>
+                <a href="tel:+917878357375">
+                    <div><img src="./Image/phone (2).png"></div>Make a Call
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!------------footer Section Start----------->
+
+    <footer>
+        <h3>
+            Thank You for visiting my PortFolio 💙
+        </h3>
+    </footer>
+</body>
+<script src="./header.js"></script>
+<script src="./index.js"></script>
+
+</html>
